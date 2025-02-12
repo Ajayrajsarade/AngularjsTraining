@@ -1,0 +1,20 @@
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<script src="./modules/app.js"></script>
+<script src="./controllers/product.controller.js"></script>
+<script src="./controllers/login.controller.js"></script>
+</head>
+<div ng-app="ecommerceApp" ng-controller="LoginController" align="center" style="padding: 100 100 45 45;background-color: aqua; min-height: 500px;">
+    <h2>Login</h2>
+    <form ng-submit="onValidate()">
+        <label>Email:</label>
+        <input type="email" ng-model="user.email" required/><br><br>
+
+        <label>Password:</label>
+        <input type="password" ng-model="user.password" required/><br><br>
+
+        <button type="submit">Login</button>
+    </form>
+
+</div>

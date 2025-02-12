@@ -1,0 +1,35 @@
+
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="./modules/catlog.module.js"></script>
+    <script src="./modules/app.js"></script>
+    <script src="./controllers/product.controller.js"></script>  
+</head>
+<style>
+    th {
+        background-color: rgb(14, 1, 1);
+        color: white; /* Optional: Make text white for better visibility */
+        padding: 10px;
+    }
+    td {
+        background-color: rgb(231, 237, 233);
+        color: rgb(11, 1, 1); /* Optional: Make text white for better visibility */
+        padding: 10px;
+    }
+</style>
+ <div ng-app="catlogmodule" ng-controller="ProductController" style="padding: 100 100 45 45; background-color: rgb(7, 247, 167); min-height: 500px;">
+    <h2 align="center">Product Catalog</h2>
+    <table border="1" align="center">
+        <tr background-color="red">
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+        </tr>
+        <tr ng-repeat="product in products">
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+            <td>{{ product.category }}</td>
+        </tr>
+    </table>
+</div>
