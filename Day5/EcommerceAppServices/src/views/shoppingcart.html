@@ -1,0 +1,10 @@
+<div>
+    <h2>Shopping Cart</h2>
+    <ul>
+        <li ng-repeat="item in cart">
+            {{ item.name }} - ${{ item.price }}
+            <button ng-click="removeItem($index)">Remove</button>
+        </li>
+    </ul>
+    <p ng-if="cart.length === 0">Your cart is empty!</p>
+</div>
