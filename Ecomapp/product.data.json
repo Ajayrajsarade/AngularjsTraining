@@ -1,0 +1,45 @@
+[
+    {
+        "id": "01",
+        "name": "Laptop bag",
+        "type": "Accessories",
+        "subtype": "Bag",
+        "price": 8000
+        },
+    {
+        "id": "02",
+        "name": "Tiffin bag",
+        "type": "Accessories",
+        "subtype": "Bag",
+        "price": 7000
+    },
+    {
+        "id": "03",
+        "name": "Hand bag",
+        "type": "Accessories",
+        "subtype": "Bag",
+        "price": 5000
+    },
+    {
+        "id": "04",
+        "name": "Travel bag",
+        "type": "Accessories",
+        "subtype": "Bag",
+        "price": 2000
+    },
+    {
+        "id": "05",
+        "name": "School bag",
+        "type": "Accessories",
+        "subtype": "Bag",
+        "price": 2000
+    },
+    {
+        "id": "06",
+        "name": "Office bag",
+        "type": "Accessories",
+        "subtype": "Bag",
+        "price": 2000
+    }
+]
+

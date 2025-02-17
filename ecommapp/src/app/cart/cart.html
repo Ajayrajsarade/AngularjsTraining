@@ -1,0 +1,6 @@
+<h2>Your Cart</h2>
+<div ng-repeat="item in ctrl.cart">
+    <h3>{{item.name}}</h3>
+    <p>₹{{item.price}}</p>
+</div>
+<button ng-click="ctrl.logout()">Logout</button>

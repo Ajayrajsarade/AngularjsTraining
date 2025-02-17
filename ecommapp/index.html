@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="ecommapp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce App</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+    <!-- <script src="dist/app.bundle.js" defer></script> -->
+</head>
+<body>
+    <nav>
+        <a href="#!/login">Login</a>
+        <a href="#/register">Register</a>
+        <a href="#/products">Products</a>
+        <a href="#/cart">Cart</a>
+    </nav>
+    <div ng-view></div>
+</body>
+</html>

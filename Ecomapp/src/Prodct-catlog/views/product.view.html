@@ -1,0 +1,40 @@
+<div class="container">
+    <h2 class="text-center my-4">Product Catalog</h2>
+    <div class="row">
+        <div class="col-md-4" ng-repeat="product in vm.products">
+            <div class="card product-card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text">Price: ₹{{ product.price }}</p>
+
+                    <!-- Quantity Control -->
+                    <div class="quantity-control d-flex justify-content-between align-items-center">
+                        <button class="btn btn-sm btn-secondary" ng-click="vm.updateQuantity(product, -1)">
+                            <i class="fa fa-minus"></i>
+                        </button>
+                        <span class="quantity">{{ product.quantity || 0 }}</span>
+                        <button class="btn btn-sm btn-primary" ng-click="vm.updateQuantity(product, 1)">
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <button style="background-color: rgb(244, 21, 32);width: 250px;"  ng-click="vm.addToCart(product)">
+                        <i class="fa fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div>
+    <a class="nav-link text-blue" href="#!/home" style="font-size: 25px;">Home</a>
+    <a class="nav-link text-blue" href="#!/products"  style="font-size: 25px;">Products</a>
+    <a href="#!/cart" class="nav-link text-blue"  style="font-size: 25px;">Cart </a>
+    <button class="btn btn-danger ml-2" ng-click="vm.logout()" style="font-size: 25px;">Logout</button>
+   </div>
+       
+</div>
+
+
+
+
+

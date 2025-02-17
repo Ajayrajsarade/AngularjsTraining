@@ -1,0 +1,30 @@
+
+<div class="register-container" ng-controller="AuthController as vm">
+    
+    <div class="register-right" align="center" style="padding-top: 125px">
+        <form ng-submit="vm.register()">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" class="input-field" ng-model="vm.user.name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" class="input-field" ng-model="vm.user.email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="input-field" ng-model="vm.user.password" required>
+            </div>
+
+
+            <button type="submit" class="register-btn" style="background-color: aqua;width: 250px;">Register</button>
+        </form>
+
+        <p class="error-message-register">{{ vm.message }}</p>
+
+        <p class="login-link">Go to login <a href="#!/login">Login</a></p>
+    </div>
+</div>
+
